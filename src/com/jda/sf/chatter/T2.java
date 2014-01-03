@@ -13,9 +13,9 @@ import org.apache.http.util.EntityUtils;
 public class T2 {
 
     // TODO:change node from ap1 to your node
-    private static final String RES_URL = "https://cs3.salesforce.com/services/data/v27.0/chatter/feeds/user-profile/me/feed-items";
+    private static final String RES_URL = "https://cs22.salesforce.com/services/data/v27.0/chatter/feeds/user-profile/me/feed-items";
     // TODO:change this before run
-    private static final String OAUTH_TOKEN = "OAuth 00DQ0000001f30y!ARcAQERZPayrNLaOZhOXqH0lbrlTF4sV5iwmc6bzH8Y9VP6uhv77gL9.8YZuT8l1d4e4Km7nVosNbanBaXnQxKV16Res7uZl";
+    private static final String OAUTH_TOKEN = "OAuth 00DQ0000001f30m!ARcAKRPZPayrNLaOZhOXqH0lbrlTF4sV5iwmc6bzH8Y9VP6uhv77gL9.8YZuT8l1d4e4Km7nVosNbanBaXnQxKV16Res7uZl";
 
     public static void main(String[] args) throws Exception {
         HttpClient httpclient = new DefaultHttpClient();
@@ -24,7 +24,7 @@ public class T2 {
         httppost = new HttpPost(RES_URL);
         reqEntity = new MultipartEntity(HttpMultipartMode.BROWSER_COMPATIBLE);
         File imageFile = new File(
-                "C:\\Users\\j1012748\\Desktop\\in_progress.png");
+                "C:\\Desktop\\in_progress.png");
         FileBody bin = new FileBody(imageFile);
         reqEntity.addPart("feedItemFileUpload", bin);
         String fileName = "Prepare DIE Sheet.png";
