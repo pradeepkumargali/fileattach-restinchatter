@@ -14,8 +14,8 @@ public class FileUpload {
 	 */
 	public static void main(String[] args) throws HttpException, IOException {
 		// TODO Auto-generated method stub
-		String oauthToken = "00DQ0000001f30y!ARcAQERZPayrNLaOZhOXqH0lbrlTF4sV5iwmc6bzH8Y9VP6uhv77gL9.8YZuT8l1d4e4Km7nVosNbanBaXnQxKV16Res7uZl";
-		String url = "https://cs3.salesforce.com/services/data/v27.0/chatter/feeds/record/006Q000000BQESF/feed-items";
+		String oauthToken = "00DQ0000001f30z!ARcADexZPayrNLaOZhOXqH0PerTF4sV5iwNo9bzH8Y9VP6uhv77gL9.8YZuT8l1d4e4Km7nVosNbanBaXnQxKV16Res7uZl";
+		String url = "https://cs22.salesforce.com/services/data/v27.0/chatter/feeds/record/006Q000000BQESF/feed-items";
 		//String text = "I love posting files to Chatter!";
 		File contentFile = getFile();
 		String desc = "This is a test file that I'm posting.";
@@ -57,7 +57,7 @@ public class FileUpload {
 
 	private static File getFile() {
 		// TODO Auto-generated method stub
-		File file = new File("C:\\Users\\j1012748\\Desktop\\Predictor\\Simple Works.pdf");
+		File file = new File("C:\\Users\\Desktop\\Predictor\\Simple Works.pdf");
 		return file;
 	}
 
