@@ -28,8 +28,8 @@ public class FileUploadJSON {
 	 */
 	public static void main(String[] args) throws HttpException, IOException {
 		// TODO Auto-generated method stub
-		String oauthToken = "00DQ0000001f30y!ARcAQCVbMyBnWMKI1xlSnmI3I12qbJNhoM__16WHLxfX6YVyXqbC3lyCQA66Uhu0YHyUttlYTiDzkKDkLnI8eESveagFEEhm";
-		String url = "https://cs3.salesforce.com/services/data/v27.0/chatter/feeds/record/006Q000000BQESF/feed-items";
+		String oauthToken = "00DQ0000001f30n!ARcAQCVbMyBnWMKxImlSnmI3I12qbJNhoM__16WHLxfX6YVyXqbC3lyCQA66Uhu0YHyUttlYTiDzkKDkLnI8eESveagFEEhm";
+		String url = "https://cs22.salesforce.com/services/data/v27.0/chatter/feeds/record/006Q000000BQESF/feed-items";
 		//String text = "I love posting files to Chatter!";
 		Map<String, List<Map<String, String>>> messageSegments = new HashMap<String, List<Map<String, String>>>();
 		Map<String, Map<String, List<Map<String, String>>>> json = new HashMap<String, Map<String, List<Map<String, String>>>>();
@@ -98,7 +98,7 @@ public class FileUploadJSON {
 
 	private static File getFile() {
 		// TODO Auto-generated method stub
-		File file = new File("C:\\Users\\j1012748\\Desktop\\Predictor\\Simple Works.pdf");
+		File file = new File("C:\\Users\\Desktop\\Predictor\\Simple Works.pdf");
 		return file;
 	}
 
